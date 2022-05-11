@@ -76,3 +76,28 @@ void _pchar(stack_t **stack, unsigned int line_number)
 	}
 	printf("%c\n", (*stack)->n);
 }
+
+/**
+ *_pstr - prints the string starting at the top of the stack, follow by a nl
+ *@stack: doble pointer to an array
+ *@line_number: line read
+ *Return: nothing
+ */
+
+void _pstr(stack_t **stack, unsigned int line_number)
+{
+	(void) line_number;
+
+	
+	if (stack == NULL || *stack == NULL)
+	{
+		putchar('\n');
+		return;
+	}
+	while (((*stack)->n < 0 || (*stack)->n >= 128))
+	{
+		putchar((*stack)->n);
+		(*stack)->n = (*stack)->next->n;
+	}
+	putchar('\n');
+}
