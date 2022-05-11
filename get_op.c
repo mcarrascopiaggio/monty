@@ -43,7 +43,8 @@ int get_opcode(FILE *file, instruction_t ops[])
 			}
 			if (flag == 0)
 			{
-				error(line, tok, str, file, stack);
+				fprintf(stderr, "L%d: unknown instruction %s\n", line, tok);
+				error(str, file, stack);
 			}
 		}
 	}
@@ -66,16 +67,13 @@ void _free_errors(char *str, FILE *file, stack_t *stack)
 
 /**
  *error - things to do if the error
- *@line: number of lines
- *@tok: argument
  *@str: second
  *@file: file
  *@stack: stack
  */
 
-void error(unsigned int line, char *tok, char *str, FILE *file, stack_t *stack)
+void error(char *str, FILE *file, stack_t *stack)
 {
-	fprintf(stderr, "L%d: unknown instruction %s\n", line, tok);
 	_free_errors(str, file, stack);
 	exit(EXIT_FAILURE);
 

@@ -61,6 +61,6 @@ void free_stackt(stack_t *stack);
 stack_t *add_dnodeint(stack_t **head, const int n);
 int _check_digit(char *arg);
 void _free_errors(char *str, FILE *file, stack_t *stack);
-void error(unsigned int line, char *tok, char *str, FILE *file, stack_t *stack);
+void error(char *str, FILE *file, stack_t *stack);
 ssize_t getline(char **lineptr, size_t *n, FILE *stream);
 #endif
