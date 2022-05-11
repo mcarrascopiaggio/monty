@@ -44,7 +44,8 @@ int get_opcode(FILE *file, instruction_t ops[])
 			if (flag == 0)
 			{
 				fprintf(stderr, "L%d: unknown instruction %s\n", line, tok);
-				error(str, file, stack);
+				_free_errors(str, file, stack);
+				exit(EXIT_FAILURE);
 			}
 		}
 	}
