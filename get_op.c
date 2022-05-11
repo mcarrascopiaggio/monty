@@ -25,8 +25,6 @@ int get_opcode(FILE *file, instruction_t ops[])
 		}
 		line++;
 		tok = strtok(str, DELIM);
-		if (strchr(tok, '#') != NULL)
-			continue;
 		i = 0;
 		flag = 0;
 		if (tok)
