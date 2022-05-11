@@ -11,6 +11,8 @@
 - Implement the div opcode: The opcode div divides the second top element of the stack by the top element.
 - Implement the mul opcode: The opcode mul multiplies the second top element of the stack with the top element.
 - Implement the mod opcode: The opcode mod computes the rest of the division of the second top element by the top element. 
+- Implement the # as a comment
+- Implement the pchar opcode: The opcode pchar prints the char at the top of the stack, followed by a new line.
 
 ## General Requirements
 - Allowed editors: vi, vim, emacs
@@ -31,7 +33,7 @@ This project  was compiled this way:
 $ gcc -g -Wall -Werror -Wextra -pedantic -std=c90 *.c -o monty
 ```
 #### Authors: 
-@ [Marcela Carrasco](https://github.com/mcarrascopiaggio)
+@ [Marcela Carrasco](https://github.com/mcarrascopiaggio)I
 
 
 
