@@ -96,7 +96,7 @@ void _pstr(stack_t **stack, unsigned int line_number)
 		putchar('\n');
 		return;
 	}
-	while (node && (node->n > 0 || node->n < 128))
+	while (node && (node->n > 0 && node->n < 128))
 	{
 		putchar(node->n);
 		node = node->next;
