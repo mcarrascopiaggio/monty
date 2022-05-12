@@ -115,6 +115,7 @@ void _num(stack_t **stack, unsigned int line_number)
 {
 	(void) (*stack);
 	(void) line_number;
-	
+
+	printf("I am in the # function\n");
 	return;
 }
