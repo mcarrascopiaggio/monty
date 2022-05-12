@@ -91,7 +91,7 @@ void _pstr(stack_t **stack, unsigned int line_number)
 
 	node = *stack;
 
-	if (stack == NULL || *stack == NULL)
+	if (stack == NULL || *stack == NULL || node == NULL)
 	{
 		putchar('\n');
 		return;
