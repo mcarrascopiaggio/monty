@@ -1,5 +1,10 @@
 # Stacks, Queues - LIFO, FIFO
 
+![GitHub last commit](https://img.shields.io/github/last-commit/mcarrascopiaggio/monty)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/mcarrascopiaggio/monty)
+![Lines of code](https://img.shields.io/tokei/lines/github/mcarrascopiaggio/monty)
+
+
 ## Project scope
 - Implement the push and pall opcodes: The opcode push pushes an element to the stack and the opcode pall prints all the values on the stack, starting from the top of the stack.
 - Implement the pint opcode: The opcode pint prints the value at the top of the stack, followed by a new line.
@@ -11,7 +16,6 @@
 - Implement the div opcode: The opcode div divides the second top element of the stack by the top element.
 - Implement the mul opcode: The opcode mul multiplies the second top element of the stack with the top element.
 - Implement the mod opcode: The opcode mod computes the rest of the division of the second top element by the top element. 
-- Implement the # as a comment
 - Implement the pchar opcode: The opcode pchar prints the char at the top of the stack, followed by a new line.
 
 ## General Requirements
