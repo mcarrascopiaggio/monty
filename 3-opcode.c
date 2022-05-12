@@ -86,17 +86,20 @@ void _pchar(stack_t **stack, unsigned int line_number)
 
 void _pstr(stack_t **stack, unsigned int line_number)
 {
+	stack_t *node;
 	(void) line_number;
+
+	node = *stack;
 
 	if (stack == NULL || *stack == NULL)
 	{
 		putchar('\n');
 		return;
 	}
-	while (((*stack)->n < 0 || (*stack)->n >= 128))
+	while (node && (node->n > 0 || node->n < 128))
 	{
-		putchar((*stack)->n);
-		(*stack)->n = (*stack)->next->n;
+		putchar(node->n);
+		node = node->next;
 	}
-	putchar('\n');
+	printf("\n");
 }
