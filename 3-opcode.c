@@ -103,3 +103,19 @@ void _pstr(stack_t **stack, unsigned int line_number)
 	}
 	printf("\n");
 }
+
+/**
+ *_num - manage comments
+ *@stack: doble pointer to an array
+ *@line_number: line read
+ *Return: nothing
+ */
+
+void _num(stack_t **stack, unsigned int line_number)
+{
+	(void) (*stack);
+	(void) line_number;
+
+	
+	return;
+}
