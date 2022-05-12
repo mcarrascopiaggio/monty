@@ -31,6 +31,8 @@ int get_opcode(FILE *file, instruction_t ops[])
 		{
 			while (ops[i].opcode)
 			{
+				if (strchr(tok, '#') != NULL)
+					continue;
 				if (strlen(tok) == strlen(ops[i].opcode) &&
 						strcmp(tok, ops[i].opcode) == 0)
 				{
