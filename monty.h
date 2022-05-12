@@ -54,6 +54,7 @@ void _mul(stack_t **stack, unsigned int line_number);
 void _mod(stack_t **stack, unsigned int line_number);
 void _pchar(stack_t **stack, unsigned int line_number);
 void _pstr(stack_t **stack, unsigned int line_number);
+void _rotl(stack_t **stack, unsigned int line_number);
 
 /* Prototyoe of auxiliary functions */
 int get_opcode(FILE *file, instruction_t ops[]);
