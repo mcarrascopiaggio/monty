@@ -17,6 +17,8 @@
 - Implement the mul opcode: The opcode mul multiplies the second top element of the stack with the top element.
 - Implement the mod opcode: The opcode mod computes the rest of the division of the second top element by the top element. 
 - Implement the pchar opcode: The opcode pchar prints the char at the top of the stack, followed by a new line.
+- Implement the pstr opcode: prints the string starting at the top of the stack, followed by a new line.
+- Implement the rotl opcode: The opcode rotl rotates the stack to the top.
 
 ## General Requirements
 - Allowed editors: vi, vim, emacs
